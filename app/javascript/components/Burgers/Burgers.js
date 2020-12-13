@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Burger from './Burger'
+import styled from 'styled-components'
+
+const Home = styled.div``
+const Header = styled.div``
+const Subheader = styled.div``
+const Grid = styled.div``
+
 
 const Burgers = () => {
   const [burgers, setBurgers] = useState([])

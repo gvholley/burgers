@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter as Router, Link} from 'react-router-dom'
 
 const Burger = (props) => {
   return (
@@ -8,7 +9,9 @@ const Burger = (props) => {
       </div>
       <div className="burger-name">{props.attribute.name}</div>
       <div className="burger-score">{props.attribute.avg_score}</div>
-      <div className="burger-link"><a href={`/burgers/${props.attributes.slug}`}>View Restaurant</a>
+      <div className="burger-link">
+      <Link to={`/burgers/${props.attributes.slug}`}>View Restaurant
+      </Link>
       </div>
     </div>
 
